@@ -311,7 +311,7 @@ address {
 }
 .portfolio-header {
   margin-bottom: 94px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .buttons-list .button {

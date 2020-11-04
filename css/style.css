@@ -116,18 +116,20 @@ a:active {
   font-weight: 900;
   text-align: center;
   color: var(--background-colour);
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-section {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
-
+.container-hero {
+  margin-bottom: 0;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
 .order-button {
   background-color: var(--buttons-links-colour);
   width: 200px;

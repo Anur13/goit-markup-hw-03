@@ -116,6 +116,9 @@ a:active {
   font-weight: 900;
   text-align: center;
   color: var(--background-colour);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-section {
@@ -123,8 +126,6 @@ a:active {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 
 .order-button {

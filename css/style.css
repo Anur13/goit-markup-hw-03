@@ -299,7 +299,7 @@ address {
   display: flex;
 }
 .header-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 .container-nav {
   display: flex;

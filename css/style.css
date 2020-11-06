@@ -313,13 +313,14 @@ address {
 }
 .nav-links {
   display: flex;
-  margin-right: -30px;
+  margin-right: -50px;
 }
 .header-item:not(:last-child) {
   margin-right: 30px;
 }
 .nav-link {
-  flex-basis: calc(100% / 3 - 100px);
+  flex-basis: calc(100% - 100px / 3);
+  margin-right: 50px;
 }
 .container-nav {
   display: flex;
@@ -344,4 +345,34 @@ address {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.hero-section {
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
+}
+
+.qualities-item::before {
+  content: "";
+  display: block;
+  max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: scale-down;
+}
+
+.logo-antenna::before {
+  background-image: url(../images/icons-homework4/antenna.svg);
+}
+.logo-clock::before {
+  background-image: url(../images/icons-homework4/clock.svg);
+}
+.logo-diagram::before {
+  background-image: url(../images/icons-homework4/diagram.svg);
+}
+.logo-astronaut::before {
+  background-image: url(../images/icons-homework4/astronaut.svg);
 }

@@ -320,6 +320,8 @@ address {
 }
 .nav-link {
   flex-basis: calc(100% - 100px / 3);
+}
+.nav-link:not(:last-child) {
   margin-right: 50px;
 }
 .container-nav {

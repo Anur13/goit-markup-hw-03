@@ -316,7 +316,7 @@ address {
   margin-right: -50px;
 }
 .header-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .nav-link {
   flex-basis: calc(100% - 100px / 3);

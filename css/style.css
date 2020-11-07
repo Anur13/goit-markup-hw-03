@@ -18,7 +18,10 @@ html {
   --buttons-links-colour: #2196f3;
   --background-colour: #ffffff;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 .logo {
   font-size: 26px;
   font-family: "Raleway", serif;
@@ -26,8 +29,14 @@ html {
   margin-right: 93px;
 }
 
+img {
+  display: block;
+  flex-basis: 100%;
+}
+
 ul {
   list-style: none;
+  margin: 0;
 }
 
 h2,
@@ -43,8 +52,11 @@ body,
 .nav,
 .header-contacts {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   font-weight: 500;
+}
+.section-padding {
+  padding-bottom: 94px;
 }
 
 .container {
@@ -53,7 +65,6 @@ body,
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 94px;
 }
 
 .nav span {
@@ -69,11 +80,9 @@ body,
 .hidden {
   display: none;
 }
-.team-div {
-  background-color: #f5f4fa;
-}
 
 .team {
+  background-color: #f5f4fa;
   padding-top: 94px;
 }
 .team-card p {
@@ -82,17 +91,16 @@ body,
 }
 
 .team-card {
-  width: 270px;
   background-color: #ffffff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc(100% / 4 - 30px * 3);
 }
 
 .team-cards {
   display: flex;
   justify-content: space-between;
-  flex-basis: calc(100% / 4 - 30px);
 }
 
 .nav a:hover,
@@ -116,6 +124,8 @@ a:active {
   font-weight: 900;
   text-align: center;
   color: var(--background-colour);
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-section {
@@ -128,11 +138,11 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .order-button {
   background-color: var(--buttons-links-colour);
-  width: 200px;
+  min-width: 200px;
   color: var(--background-colour);
   padding: 10px 32px;
   border-radius: 4px;
@@ -148,6 +158,7 @@ a:active {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .qualities-paragraph {
@@ -157,7 +168,7 @@ a:active {
 }
 
 .section-header {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.27;
   text-align: center;
@@ -184,13 +195,13 @@ a:active {
   font-size: 18px;
   line-height: 2;
   margin-left: 24px;
+  margin-top: 0;
 }
 .product-type {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   margin-left: 24px;
-  margin-bottom: 20px;
 }
 .button {
   min-width: 73px;
@@ -201,6 +212,7 @@ a:active {
   font-weight: 500;
   margin-left: 8px;
   border-radius: 4px;
+  padding: 8px 22px;
 }
 
 a {
@@ -246,12 +258,14 @@ address {
   margin-top: -30px;
   margin-left: -30px;
 }
-.card {
-  width: 370px;
+.product-card {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 60px);
+}
+.product-card:hover,
+.product-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .buttons-list {
@@ -259,20 +273,23 @@ address {
   justify-content: center;
 }
 
-.qualities.container ul {
+.qualities-list {
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.qualities.container li {
+.qualities-item {
+  flex-basis: calc(100% / 3 - 90px);
   margin-left: 30px;
-}
-.products-images {
-  display: flex;
+  margin-top: 30px;
   justify-content: center;
 }
 
-.products-images li {
-  margin-left: 30px;
+.product-images {
+  display: flex;
+  justify-content: space-between;
 }
+
 .team.container {
   padding-left: 0px;
   padding-right: 0px;
@@ -297,8 +314,15 @@ address {
 }
 .nav-links {
   display: flex;
+  margin-right: -50px;
 }
 .header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link {
+  flex-basis: calc(100% - 100px / 3);
+}
+.nav-link:not(:last-child) {
   margin-right: 50px;
 }
 .container-nav {
@@ -317,4 +341,41 @@ address {
 
 .buttons-list .button {
   border: none;
+}
+.card-border {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.hero-section {
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
+}
+
+.qualities-item::before {
+  content: "";
+  display: block;
+  max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: scale-down;
+}
+
+.logo-antenna::before {
+  background-image: url(../images/icons-homework4/antenna.svg);
+}
+.logo-clock::before {
+  background-image: url(../images/icons-homework4/clock.svg);
+}
+.logo-diagram::before {
+  background-image: url(../images/icons-homework4/diagram.svg);
+}
+.logo-astronaut::before {
+  background-image: url(../images/icons-homework4/astronaut.svg);
 }

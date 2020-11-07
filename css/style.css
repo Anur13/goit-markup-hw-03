@@ -351,8 +351,6 @@ address {
 }
 
 .hero-section {
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
 }
 
 .qualities-item::before {
